@@ -1,0 +1,10 @@
+as x 1 = NaN 
+as x 2 = NaN 
+as x 3 = NaN 
+as x 4 = NaN 
+as x 5 = NaN 
+as x 6 = NaN 
+as x 7 = NaN 
+as x 8 = NaN 
+as x 9 = NaN 
+as x 10 = NaN 

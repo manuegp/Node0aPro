@@ -1,0 +1,10 @@
+rew x 1 = NaN 
+rew x 2 = NaN 
+rew x 3 = NaN 
+rew x 4 = NaN 
+rew x 5 = NaN 
+rew x 6 = NaN 
+rew x 7 = NaN 
+rew x 8 = NaN 
+rew x 9 = NaN 
+rew x 10 = NaN 
