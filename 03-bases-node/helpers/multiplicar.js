@@ -1,26 +1,30 @@
 const fs = require("fs");
-
-const crearArchivo = async (base) => {
+const colors = require('colors')
+const crearArchivo = async (base, lista = false, hasta ) => {
   try {
-      console.log(typeof base)
-      if(typeof base == 'string'){
-        throw 'Es un string no se admiten strings'
-      }
-    console.log("============================");
-    console.log(`      Tabla del ${base}    `);
-    console.log("============================");
+    console.log(typeof base);
+    if (typeof base == "string") {
+      throw "Es un string no se admiten strings";
+    }
+    
 
     let salida = "";
-
-    for (let i = 1; i < 11; i++) {
+    hasta++
+    for (let i = 1; i < hasta; i++) {
+      
       salida += `${base} x ${i} = ${base * i} \n`;
     }
 
-    fs.writeFileSync(`tabla-${base}.txt`, salida);
-
+    fs.writeFileSync(`./salida/tabla-${base}.txt`, salida);
+    if (lista) {
+      console.log('============================'.rainbow);
+      console.log(`      Tabla del ${base}    `.rainbow);
+      console.log("============================".rainbow);
+      console.log(salida.rainbow)
+    }
     return `tabla-${base}.txt`;
   } catch (err) {
-      throw err
+    throw err;
   }
 };
 
